@@ -46,7 +46,7 @@ const productosdb  : producto[]= [
 //
 
 export function buscarPorNombre(nombre: string) {
-	return productosdb.find(producto => producto.nombre.toLocaleUpperCase === nombre.toLocaleUpperCase) || null;
+	return productosdb.find(producto => producto.nombre.toUpperCase() === nombre.toUpperCase()) || null;
   }
   
  
